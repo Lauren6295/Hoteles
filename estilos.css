@@ -1,13 +1,33 @@
+/***********
+Reset.
+***********/
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/***********
+End Reset.
+***********/
+
+/***********
+Body.
+***********/
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
 }
+
+/***********
+End Body.
+***********/
+
+/***********
+Main Menu.
+***********/
 
 .mainImage {
     width: 1200px;
@@ -16,38 +36,157 @@ body {
     text-align: center;
 }
 
-.destino1 {
-    width: 350px;
-    height:200px;
-    margin: 25px;
-    float: left;
-}
-
-.destino2 {
-    width: 350px;
-    height:200px;
-    margin: 25px;
-    float: left;
-}
-
-.destino3 {
-    width: 350px;
-    height:200px;
-    margin: 25px;
-    float: left;
-}
-
 .contenido {
-    width: 350px;
-    height:200px;
-    margin: 0 25px 50px 25px;
-    float: left;
-    text-align: justify;
+    width: 1200px;
+    height: auto;
+    margin: 0 0 50px 0;
+    text-align: justify;    
 }
 
 .contenido h2 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/***********
+Ends Menu
+***********/
+
+/***********
+Slider
+***********/
+
+/*Set the default margins and size content for the slider.*/
+/*Overflow-x: Hides the Scroll Nav Bar.*/
+#slider, .slide-content {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 600px;
+    overflow-y: hidden;
+}
+
+/*Set the content wrapper as relative.*/
+.slider-wrapper {
+    position: relative;
+    left: 200px;
+    right: 200px;
+}
+
+.slider {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+/*Set the images we will use*/
+.slide1 {
+    background-image: url('imagenes/cahuita6.jpg')
+}
+
+.slide2 {
+    background-image: url('imagenes/habitacion9.jpg')
+}
+
+.slide3 {
+    background-image: url('imagenes/cahuita7.jpg')
+}
+
+.slide4 {
+    background-image: url('imagenes/habitacion10.jpg')
+}
+
+.slide5 {
+    background-image: url('imagenes/cahuita8.jpg')
+}
+
+.slide6 {
+    background-image: url('imagenes/habitacion11.jpg')
+}
+
+/*Set the content inside the slider box*/
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
+
+.slide-content span {
+    font-size: 5em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: aqua;
+    opacity: 0.5;
+}
+
+.slide-content p {
+    font-size: 1em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: aqua;
+    opacity: 0.8;
+    position: relative;
+    top: 38%;
+}
+
+
+.slide-content .habitacionText {
+    font-size: 4em;
+    text-align: center;
+}
+
+/*Arrow Settings*/
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid; 
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent aqua transparent transparent;
+    left: 0;
+    margin-left: 30px;
+    opacity: 0.8;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent aqua;
+    right: 420px;
+    margin-right: 30px;
+    opacity: 0.8;
+
+}
+
+/***********
+Ends slider
+***********/
+
+/***********
+Form field
+***********/
+
+.form {
+    margin: 10px 0 30px 200px;
+    width: 800px;
+}
+/***********
+Form Ends
+***********/
+
+/***********
+Footer
+***********/
 
 .footer {
     background-color: black;
@@ -66,6 +205,10 @@ body {
 .footer li + li{
     padding-left: 400px
 }
+
+/***********
+Ends Footer
+***********/
 
 
 
