@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Limón</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="mainImage">
+            <img src="imagenes/destino1.jpg" alt="Imagen Cahuita" class="mainImage">
+        </div>
+
+        <div class="contenido">
+            <h2>Cahuita</h2>
+            <p>Cahuita es una pequeña ciudad situada al sur
+                del Caribe de Costa Rica, y pertenece a la
+                provincia de Limón. Existe una cultura Afro-Caribeña
+                que da lugar a una diversidad de experiencias.
+                Cahuita ofrece una gran variedad de
+                alojamientos para distintos presupuestos
+                (desde los más económicos, hasta lujosas habitaciones).
+                Puede alojarse en una cabina, un bungalow, un hotel, un resort, etc.
+                También hay hoteles con piscina y frente al mar.</p>
+        </div>
+
+        <div class="slider-wrapper">
+            <div id="arrow-left" class="arrow"></div>
+
+            <div id="slider">
+
+                <div class="slider slide1">
+                    <div class="slide-content">
+                        <span>Hotel Cahuita</span>
+                    </div>
+                </div>
+
+                <div class="slider slide2">
+                    <div class="slide-content">
+                        <span class="habitacionText">Habitacion de Lujo</span>
+                        <p>Esta habitacion cuenta con una cama King,
+                            especial para relajarse ya que su balcon te
+                            permite observar el mar.
+                            Precio por noche: $500.
+                            Para una persona o pareja, no incluye desayuno.</p>
+                    </div>
+                </div>
+
+                <div class="slider slide3">
+                    <div class="slide-content">
+                        <span>Hotel Cahuita</span>
+                    </div>
+                </div>
+
+                <div class="slider slide4">
+                    <div class="slide-content">
+                        <span class="habitacionText">Habitacion de Paso</span>
+                        <p>Esta habitacion cuenta con dos camas,
+                            especial para mochileros y personas que andan
+                            de paso.
+                            Precio por noche: $250.
+                            Para una persona o pareja, no incluye desayuno.</p>
+                    </div>
+                </div>
+
+                <div class="slider slide5">
+                    <div class="slide-content">
+                        <span>Hotel Cahuita</span>
+                    </div>
+                </div>
+
+                <div class="slider slide6">
+                    <div class="slide-content">
+                        <span class="habitacionText">Habitacion Catre</span>
+                        <p>Esta habitacion no cuenta con una cama,
+                            especial para mochileros y personas que andan
+                            de paso y que duermen donde sea.
+                            Precio por noche: $100.
+                            Para una persona o pareja, no incluye desayuno ni colchon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="arrow-right" class="arrow"></div>
+        </div>
+
+        <form class="form" action="POST">
+            <fieldset>
+                <legend>Datos Basicos</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" value="" size="50"/>
+                <br/>
+                <br/>
+                <label for="number">Numero de telefono</label>
+                <input type="number" name="numero" id="numero" value="" size="25"/>
+                <br/>
+                <br/>
+                <label for="correo">Correo electronico</label>
+                <input type="correo" name="correo" id="correo" value="" size="25"/>
+                <br/>
+                <br/>
+                <label for="comentarios">Comentarios</label>
+                <br/>
+                <textarea name="comentarios" id="comentarios" cols="25" rows="5"> </textarea>
+                <br/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Alquilar</legend>
+                <label for="habitacion">Habitacion</label>
+                <select name="Habitacion" id="Habitacion">
+                    <option value="">-Selecionar Valor-</option>
+                    <option value="Habitacion de Lujo">Habitacion de Lujo</option>
+                    <option value="Habitacion de Paso">Habitacion de Paso</option>
+                    <option value="Habitacion Catre">Habitacion Catre</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="number">Cantidad de Noches</label>
+                <input type="number" name="numeroNoches" id="numeroNohes" value="" size="1"/>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Enviar" name="enviar">
+                <input type="reset" value="Borrar información" name="borrar">
+            </fieldset>
+        </form>
+
+        <div class="footer">      
+            <ul>
+                <li>Contactenos:</li>
+                <li>Teléfono: 22-22-22-22</li>
+                <li>Proyecto.</li>
+            </ul>          
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
